@@ -1,0 +1,243 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+/* Specific styles for each page */
+/* About */
+.about {
+    text-align: center;
+}
+
+.about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Services */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service {
+    flex: 1 1 300px;
+    background-color: #f4f4f4;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+}
+
+.service h2 {
+    margin-bottom: 10px;
+}
+
+/* Portfolio */
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    flex: 1 1 300px;
+    background-color: #f4f4f4;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+}
+
+.project h2 {
+    margin-bottom: 10px;
+}
+
+/* Testimonials */
+.testimonials {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    background-color: #f4f4f4;
+    padding: 15px;
+    margin: 10px;
+}
+
+.testimonial span {
+    font-style: italic;
+}
+
+.clients {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.client {
+    flex: 1 1 200px;
+    text-align: center;
+    margin: 10px;
+}
+
+.client img {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+/* Blog */
+.blog {
+    text-align: center;
+}
+
+.post {
+    background-color: #f4f4f4;
+    padding: 15px;
+    margin: 10px;
+}
+
+.post h2 {
+    margin-bottom: 10px;
+}
+
+.read-more {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+.read-more:hover {
+    background-color: #555;
+}
+
+/* Contact */
+.contact {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* FAQ */
+.faq {
+    text-align: center;
+}
+
+.question {
+    background-color: #f4f4f4;
+    padding: 15px;
+    margin: 10px;
+}
+
+.question h2 {
+    margin-bottom: 10px;
+}
+
+/* Privacy Policy */
+.privacy-policy {
+    text-align: center;
+}
+
+/* Terms and Conditions */
+.terms {
+    text-align: center;
+}
