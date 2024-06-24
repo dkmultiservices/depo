@@ -1,21 +1,33 @@
-/* General styles */
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
 body {
     font-family: Arial, sans-serif;
+    background-color: #3498db; /* Bleu clair */
+    color: #333; /* Couleur de texte principale */
     line-height: 1.6;
     margin: 0;
     padding: 0;
 }
 
+/* Header styles */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+    background-color: #fff; /* Fond blanc pour l'en-tête */
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère sous l'en-tête */
 }
 
 header .logo {
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: bold;
+    color: #333;
+    font-family: 'Railey', cursive; /* Police Railey */
 }
 
 nav ul {
@@ -24,220 +36,1009 @@ nav ul {
 }
 
 nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3498db; /* Changement de couleur au survol */
+}
+
+/* Galerie styles */
+.gallery {
+    background-color: #f2f2f2; /* Fond gris clair pour la galerie */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.gallery-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-list li {
+    margin: 10px;
+}
+
+.gallery-list img {
+    width: 150px; /* Ajustez la taille des images selon vos besoins */
+    height: 150px; /* Ajustez la taille des images selon vos besoins */
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; /* Animation de transformation */
+}
+
+.gallery-list img:hover {
+    transform: scale(1.1); /* Zoom léger au survol */
+}
+
+/* Section de la bannière */
+.banner {
+    background-color: #3498db; /* Bleu clair pour la bannière */
+    background-image: linear-gradient(to bottom, #3498db, #5fa8e0); /* Dégradé bleu syèl */
+    color: #fff; /* Texte blanc */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.banner-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.banner-content h1 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: 'Railey', cursive; /* Police Railey */
+}
+
+.banner-content p {
+    color: #f2f2f2;
+    font-size: 18px;
+}
+
+/* Styles pour le reste de la page */
+.services {
+    background-color: #fff; /* Fond blanc pour la section des services */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    font-family: 'Alex Brush', cursive; /* Police Alex Brush */
+}
+
+.service-item {
+    margin: 20px;
+}
+
+.service-item img {
+    width: 100px; /* Ajustez la taille des images selon vos besoins */
+    height: 100px; /* Ajustez la taille des images selon vos besoins */
+    margin-bottom: 10px;
+    border-radius: 50%; /* Transformation en cercle */
+    transition: transform 0.3s ease-in-out; /* Animation de transformation */
+}
+
+.service-item img:hover {
+    transform: scale(1.1); /* Zoom léger au survol */
+}
+
+.cta {
+    background-color: #3498db; /* Bleu clair pour l'appel à l'action */
+    color: #fff; /* Texte blanc */
+    text-align: center;
+    padding: 50px 0;
+}
+
+.cta h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: 'Greatest Vibe', cursive; /* Police Greatest Vibe */
+}
+
+.testimonials {
+    background-color: #3498db; /* Bleu clair pour les témoignages */
+    color: #fff; /* Texte blanc */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.testimonial-item {
+    margin: 20px;
+}
+
+.testimonial-item p {
+    font-style: italic;
+    color: #f2f2f2;
+}
+
+.footer-content {
+    background-color: #333; /* Fond gris foncé pour le pied de page */
+    color: #fff; /* Texte blanc */
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-section {
+    margin: 20px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Railey', cursive; /* Police Railey */
+}
+
+.footer-section p {
+    color: #ccc;
+    margin-bottom: 5px;
+}
+
+.footer-section a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+/* Styles pour le tableau des disciplines */
+.disciplines {
+    background-color: #fff; /* Fond blanc pour la section des disciplines */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.disciplines h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    font-family: 'Adlery Pro', cursive; /* Police Adlery Pro */
+}
+
+.disciplines-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.discipline-block {
+    flex-basis: calc(50% - 40px); /* Largeur de chaque bloc de discipline pour les écrans moyens */
+    padding: 20px;
+    background-color: #3498db; /* Couleur bleu ciel */
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    text-align: left;
+}
+
+.discipline-block h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff; /* Couleur texte blanc */
+    font-family: 'Alex Brush', cursive; /* Police Alex Brush */
+}
+
+.discipline-block ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.discipline-block ul li {
+    margin-bottom: 5px;
+    color: #f2f2f2; /* Couleur texte gris clair */
+}
+
+@media only screen and (max-width: 768px) {
+    .banner-content {
+        padding: 0 20px;
+    }
+    
+    .service-item img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .discipline-block {
+        flex-basis: calc(100% - 40px); /* Pleine largeur pour les blocs de discipline sur les petits écrans */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .banner-content h1 {
+        font-size: 28px;
+    }
+
+    .banner-content p {
+        font-size: 16px;
+    }
+
+    .service-item {
+        margin: 10px;
+    }
+
+    .service-item img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .discipline-block {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .discipline-block h3 {
+        font-size: 18px;
+    }
+
+    .discipline-block ul li {
+        font-size: 14px;
+    }
+}
+/* Réinitialisation des marges et paddings globaux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3498db; /* Bleu clair */
+    color: #333; /* Couleur de texte principale */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* En-tête */
+header {
+    background-color: #fff; /* Fond blanc pour l'en-tête */
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère sous l'en-tête */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 5px; /* Espacement réduit entre les éléments de la navigation */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3498db; /* Changement de couleur au survol */
+}
+
+/* Section "A pwopo de nou" */
+.about {
+    padding: 30px 10px; /* Ajustement du padding */
+}
+
+.about h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.history, .mission, .team, .achievements {
+    margin-bottom: 30px; /* Espacement entre les sections */
+    padding: 20px;
+    background-color: #fff; /* Fond blanc pour chaque section */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.history h2, .mission h2, .team h2, .achievements h2 {
+    font-family: 'Alex Brush', cursive; /* Police stylisée pour les titres des sections */
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.history p, .mission p, .team p, .achievements p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.team-member {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.team-member h3 {
+    font-family: 'Adlery Pro', sans-serif; /* Police stylisée pour les noms des membres d'équipe */
+    font-size: 20px;
+    color: #333;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Pied de page */
+footer {
+    background-color: #333; /* Fond gris foncé pour le pied de page */
+    color: #fff; /* Texte blanc */
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-section {
+    margin: 20px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.footer-section p {
+    color: #ccc;
+    margin-bottom: 5px;
+}
+
+.footer-section a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+/* Media Queries pour les Téléphones Mobiles */
+@media only screen and (max-width: 768px) {
+    .logo {
+        font-size: 20px; /* Réduction de la taille du logo */
+    }
+
+    nav ul li {
+        margin: 0 3px; /* Réduction de l'espacement dans la barre de navigation */
+    }
+
+    .about {
+        padding: 20px 5px; /* Réduction du padding dans la section "A pwopo de nou" */
+    }
+
+    .history, .mission, .team, .achievements {
+        padding: 15px; /* Réduction du padding dans les sections */
+    }
+
+    .team-member h3 {
+        font-size: 18px; /* Réduction de la taille de police des noms d'équipe */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .logo {
+        font-size: 18px; /* Réduction supplémentaire de la taille du logo */
+    }
+
+    .about {
+        padding: 15px; /* Réduction supplémentaire du padding dans la section "A pwopo de nou" */
+    }
+
+    .history, .mission, .team, .achievements {
+        padding: 10px; /* Réduction supplémentaire du padding dans les sections */
+    }
+
+    .history h2, .mission h2, .team h2, .achievements h2 {
+        font-size: 20px; /* Réduction de la taille de police des titres de section */
+    }
+
+    .team-member h3 {
+        font-size: 16px; /* Réduction de la taille de police des noms d'équipe */
+    }
+}
+/* Style pour les tableaux avec fond bleu */
+.blue-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #cce6ff; /* Couleur bleue */
+    margin-bottom: 20px; /* Marge en bas pour l'espace */
+}
+.blue-table th, .blue-table td {
+    border: 1px solid #ddd; /* Bordures grises */
+    padding: 8px; /* Espacement interne */
+    text-align: left; /* Alignement du texte à gauche */
+}
+.blue-table th {
+    background-color: #4da6ff; /* Couleur bleue foncée pour les entêtes */
+    color: white; /* Texte blanc pour les entêtes */
+}
+
+/* Style spécifique pour les lignes paires */
+.blue-table tr:nth-child(even) {
+    background-color: #f0f5ff; /* Couleur de fond bleu clair pour lignes paires */
+}
+
+/* Style pour le pied de page */
+footer {
+    background-color: #4da6ff; /* Couleur de fond bleue foncée */
+    color: white; /* Texte blanc */
+    padding: 20px; /* Espacement interne */
+    text-align: center; /* Alignement centré du texte */
+}
+.footer-section {
+    margin-bottom: 20px; /* Espacement en bas entre les sections */
+}
+.footer-section h3 {
+    font-family: 'Adlery Pro', sans-serif; /* Police spécifique */
+    margin-bottom: 10px; /* Espacement en bas pour le titre */
+}
+.footer-section p {
+    margin: 5px 0; /* Espacement minimal autour des paragraphes */
+}
+.footer-section a {
+    color: white; /* Liens en blanc */
+    text-decoration: none; /* Pas de soulignement */
+}
+.footer-section a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}
+.intro {
+    background-image: url('chemin/vers/votre/image.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.intro h1 {
+    font-family: 'Railey', cursive;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Réactivité pour les écrans plus petits */
+@media (max-width: 768px) {
+    .intro {
+        padding: 40px 10px;
+    }
+
+    .intro h1 {
+        font-size: 2em;
+    }
+
+    .intro p {
+        font-size: 1em;
+    }
+}
+.team-member {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.member-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optionnel: ajoute une ombre légère */
+}
+
+.member-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.team-member h3 {
+    font-family: 'Adlery Pro', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1.1em;
+    color: #777;
+}
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 2em;
+    font-family: 'Adlery Pro', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
     display: inline;
-    margin-right: 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-section {
-    padding: 20px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
+.about h1, .about h2 {
     text-align: center;
-    padding: 10px 0;
+    color: #007bff;
+}
+
+.intro, .mission-values, .achievements {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 1000px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.member-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    font-family: 'Adlery Pro', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1.1em;
+    color: #777;
+}
+
+.blue-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blue-table th, .blue-table td {
+    padding: 12px 15px;
+    border: 1px solid #007bff;
+    text-align: left;
+}
+
+.blue-table th {
+    background: #007bff;
+    color: #fff;
+}
+
+.blue-table tr:nth-child(even) {
+    background: #f4f4f4;
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background: #007bff;
+    color: #fff;
 }
 
 .footer-section {
     flex: 1;
+    padding: 10px;
 }
 
 .footer-section h3 {
-    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
 .footer-section p {
     margin: 5px 0;
 }
 
-/* Specific styles for each page */
-/* About */
-.about {
-    text-align: center;
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
 }
 
-.about p {
-    max-width: 600px;
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 5px solid #0056b3;
+}
+
+header .logo {
+    font-size: 2em;
+    font-family: 'Adlery Pro', sans-serif;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+.about h1, .about h2 {
+    text-align: center;
+    color: #007bff;
+}
+
+.intro, .mission-values, .achievements {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 1000px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.member-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    font-family: 'Adlery Pro', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1.1em;
+    color: #777;
+}
+
+.blue-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blue-table th, .blue-table td {
+    padding: 12px 15px;
+    border: 1px solid #007bff;
+    text-align: left;
+}
+
+.blue-table th {
+    background: #007bff;
+    color: #fff;
+}
+
+.blue-table tr:nth-child(even) {
+    background: #f4f4f4;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 5px solid #333;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-/* Services */
+.footer-section {
+    flex: 1;
+    padding: 10px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section a {
+    margin: 5px 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
 .services {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td {
+    vertical-align: top;
+    padding: 20px;
 }
 
 .service {
-    flex: 1 1 300px;
-    background-color: #f4f4f4;
-    padding: 15px;
-    margin: 10px;
-    text-align: center;
+    margin-bottom: 20px;
+    background-color: #f0f7ff; /* Ti koule ble fon */
+    padding: 15px; /* Espasaj ant kontni div la */
+    border-radius: 5px; /* Kourbure bò ak bò div la */
 }
 
 .service h2 {
+    font-size: 1.2em;
     margin-bottom: 10px;
 }
 
-/* Portfolio */
-.portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.project {
-    flex: 1 1 300px;
-    background-color: #f4f4f4;
-    padding: 15px;
-    margin: 10px;
-    text-align: center;
-}
-
-.project h2 {
+.service p {
+    font-size: 0.9em;
+    line-height: 1.6;
     margin-bottom: 10px;
 }
 
-/* Testimonials */
-.testimonials {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.testimonial {
-    background-color: #f4f4f4;
-    padding: 15px;
-    margin: 10px;
-}
-
-.testimonial span {
-    font-style: italic;
-}
-
-.clients {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.client {
-    flex: 1 1 200px;
-    text-align: center;
-    margin: 10px;
-}
-
-.client img {
-    max-width: 100px;
-    border-radius: 50%;
-}
-
-/* Blog */
-.blog {
-    text-align: center;
-}
-
-.post {
-    background-color: #f4f4f4;
-    padding: 15px;
-    margin: 10px;
-}
-
-.post h2 {
-    margin-bottom: 10px;
-}
-
-.read-more {
-    display: inline-block;
-    background-color: #333;
-    color: #fff;
-    padding: 5px 10px;
-    text-decoration: none;
-    border-radius: 3px;
-    margin-top: 5px;
-}
-
-.read-more:hover {
-    background-color: #555;
-}
-
-/* Contact */
-.contact {
-    text-align: center;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
+.service img {
+    max-width: 100%;
+    height: auto;
     display: block;
-    margin-bottom: 5px;
+    margin-top: 10px;
 }
 
-.form-group input,
-.form-group textarea {
+.gallery {
+    margin-top: 40px;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+.image-gallery img {
+    max-width: 100%;
+    height: auto;
+}
+.services {
+    margin-top: 20px;
+}
+
+table {
     width: 100%;
-    padding: 5px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
+    border-collapse: collapse;
 }
 
-.form-group textarea {
-    resize: vertical;
+table td {
+    vertical-align: top;
+    padding: 20px;
 }
 
-button[type="submit"] {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 8px 20px;
-    cursor: pointer;
-    border-radius: 3px;
-    font-size: 1rem;
+.service {
+    background-color: #f0f7ff; /* Ti koule ble fon */
+    padding: 15px; /* Espasaj ant kontni div la */
+    border-radius: 5px; /* Kourbure bò ak bò div la */
 }
 
-button[type="submit"]:hover {
-    background-color: #555;
-}
-
-/* FAQ */
-.faq {
-    text-align: center;
-}
-
-.question {
-    background-color: #f4f4f4;
-    padding: 15px;
-    margin: 10px;
-}
-
-.question h2 {
+.service h2 {
+    font-size: 1.2em;
     margin-bottom: 10px;
 }
 
-/* Privacy Policy */
-.privacy-policy {
-    text-align: center;
+.service p {
+    font-size: 0.9em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+.service-img {
+    max-width: 100%; /* Asire imaj yo pa depase lajè kontèks la */
+    height: auto; /* Anvè, asire propòsyon ak aspè rasyonal */
+    display: block; /* Pi bon pozisyonman imaj la */
+    border-radius: 5px; /* Kourbure bò ak bò div la */
+    margin-bottom: 10px; /* Espasaj anba chak imaj */
+}
+/* Exemple de règles CSS pour une mise en page responsive */
+
+/* Réduire la taille de police pour une meilleure lisibilité sur mobile */
+body {
+    font-size: 16px; /* Taille de police de base */
 }
 
-/* Terms and Conditions */
-.terms {
-    text-align: center;
+@media only screen and (max-width: 768px) {
+    /* Styles pour les écrans jusqu'à 768px de largeur (tablette et mobile) */
+
+    .logo {
+        font-size: 20px; /* Réduire la taille du logo pour les petits écrans */
+    }
+
+    .about {
+        padding: 20px; /* Ajouter un peu d'espacement autour du contenu */
+    }
+
+    .team-member {
+        width: 100%; /* Assurer que les membres de l'équipe occupent toute la largeur */
+        text-align: center; /* Centrer le contenu des membres de l'équipe */
+        margin-bottom: 20px; /* Espacement entre les membres de l'équipe */
+    }
+
+    .member-image {
+        margin-bottom: 10px; /* Espacement entre l'image du membre de l'équipe et son nom */
+    }
+
+    .blue-table {
+        width: 100%; /* Assurer que le tableau occupe toute la largeur disponible */
+        margin-bottom: 20px; /* Espacement en bas du tableau */
+    }
+
+    /* Styles pour rendre le tableau plus lisible sur mobile */
+    .blue-table th, .blue-table td {
+        padding: 8px; /* Espacement à l'intérieur des cellules */
+        text-align: center; /* Centrer le texte dans les cellules */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Styles pour les écrans jusqu'à 480px de largeur (smartphones) */
+
+    body {
+        font-size: 14px; /* Réduire davantage la taille de police pour les petits écrans */
+    }
+
+    .logo {
+        font-size: 18px; /* Adapter encore plus la taille du logo */
+    }
 }
