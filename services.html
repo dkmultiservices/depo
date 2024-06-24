@@ -5,6 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sèvis - DK MULTI SERVICES</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .services {
+            padding: 20px;
+            text-align: center;
+        }
+        .services h1 {
+            margin-bottom: 20px;
+        }
+        .services table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .services table td {
+            padding: 20px;
+            vertical-align: top;
+        }
+        .services .service {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .services .service-img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .gallery {
+            padding: 20px;
+            text-align: center;
+        }
+        .gallery h2 {
+            margin-bottom: 20px;
+        }
+        .image-gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .image-gallery img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .footer-section {
+            flex: 1;
+            text-align: left;
+            padding: 10px;
+        }
+        .footer-section h3 {
+            margin-bottom: 10px;
+        }
+        .footer-section p {
+            margin: 5px 0;
+        }
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,38 +121,63 @@
             </ul>
         </nav>
     </header>
-    
+
     <section class="services">
         <h1>Sèvis nou yo</h1>
-        <div class="service">
-            <h2>Enprimri</h2>
-            <p>Nou ofri tout kalite enprimri pwofesyonèl: kat biznis, afich, kaye, elatriye.</p>
-        </div>
-        <div class="service">
-            <h2>Grafik Design</h2>
-            <p>Kreye konsepsyon inik pou biznis ou. Nou bay sèvis logo, banza, ak plis.</p>
-        </div>
-        <div class="service">
-            <h2>Livrezon</h2>
-            <p>Nou delivre pwodwi ou yo rapidman ak an sekirite nenpòt kote nan peyi a.</p>
-        </div>
-        <div class="service">
-            <h2>Fotokopi</h2>
-            <p>Fotokopi ak skan dokiman ak bon jan kalite.</p>
-        </div>
-        <div class="service">
-            <h2>Bindaj</h2>
-            <p>Bindaj dokiman pou prezantasyon pwofesyonèl.</p>
+        <table>
+            <tr>
+                <td>
+                    <div class="service">
+                        <img src="imaj/enpri1.jpeg" alt="Enprimri Imaj" class="service-img">
+                        <h2>Enprimri</h2>
+                        <p>Nou ofri tout kalite enprimri pwofesyonèl: kat biznis, afich, kaye, elatriye.</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="service">
+                        <img src="imaj/enpri2.png" alt="Grafik Design Imaj" class="service-img">
+                        <h2>Grafik Design</h2>
+                        <p>Kreye konsepsyon inik pou biznis ou. Nou bay sèvis logo, banza, ak plis.</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="service">
+                        <img src="imaj/enpri3.jpg" alt="Livrezon Imaj" class="service-img">
+                        <h2>Livrezon</h2>
+                        <p>Nou delivre pwodwi ou yo rapidman ak an sekirite nenpòt kote nan peyi a.</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="service">
+                        <img src="imaj/enpri4.jpg" alt="Fotokopi Imaj" class="service-img">
+                        <h2>Fotokopi</h2>
+                        <p>Fotokopi ak skan dokiman ak bon jan kalite.</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="gallery">
+        <h2>Galeri Imaj</h2>
+        <div class="image-gallery">
+            <img src="imaj/enpri5.jpeg" alt="Enprimri">
+            <img src="imaj/enpri6.jpeg" alt="Grafik Design">
+            <img src="imaj/enpri7.jpg" alt="Livrezon">
+            <img src="imaj/enpri8.jpg" alt="Fotokopi">
+            <img src="imaj/enpri9.png" alt="Bindaj">
         </div>
     </section>
-    
-   <footer>
+
+    <footer>
         <div class="footer-content">
             <div class="footer-section">
                 <h3>DK MULTI SERVICES</h3>
                 <p>Adrès: #20 Bizoton 53, Pòtoprens, Ayiti</p>
-                <p>Telefòn: +509 4850 4571  /  4321 0467</p>
-				<p>Email : saintumacarlos22@gmail.com</p>
+                <p>Telefòn: +509 4850 4571 / 4321 0467</p>
+                <p>Email: saintumacarlos22@gmail.com</p>
                 <p>Email: info@dkmultiservices.ht</p>
             </div>
             <div class="footer-section">
@@ -60,12 +185,14 @@
                 <p><a href="https://www.facebook.com/votrepage" target="_blank">Facebook</a></p>
                 <p><a href="https://www.twitter.com/votrepage" target="_blank">Twitter</a></p>
                 <p><a href="https://www.instagram.com/votrepage" target="_blank">Instagram</a></p>
+                <p><a href="https://wa.me/+50948504571" target="_blank">WhatsApp</a></p>
+                <p><a href="mailto:saintumacarlos22@gmail.com">Kont Gmail</a></p>
             </div>
             <div class="footer-section">
                 <h3>Lyen itil</h3>
-                <p><a href="privacy.html">Politik Konfidansyalite</a></p>
-                <p><a href="terms.html">Tèm ak Kondisyon</a></p>
-                <p><a href="faq.html">FAQ</a></p>
+                <p><a href="privacy.html">Politik Konfidansyalite</a> <button type="button">Wete</button></p>
+                <p><a href="terms.html">Tèm ak Kondisyon</a> <button type="button">Wete</button></p>
+                <p><a href="faq.html">FAQ</a> <button type="button">Wete</button></p>
             </div>
         </div>
     </footer>
