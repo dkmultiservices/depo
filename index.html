@@ -5,6 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DK MULTI SERVICES</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .banner {
+            background-image: url('banner.jpg');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .services, .disciplines, .gallery, .contact, .testimonials, .footer {
+            padding: 20px;
+            text-align: center;
+        }
+        .service, .discipline, .gallery {
+            margin-bottom: 20px;
+        }
+        .service, .discipline, .gallery img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        .discipline-type {
+            font-weight: bold;
+            color: #007bff;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,54 +98,120 @@
         </nav>
     </header>
     
-    <section class="banner">
-        <div class="banner-content">
-            <h1>Byenveni nan DK MULTI SERVICES</h1>
-            <p>Nou ofri pi bon sèvis enprimri a</p>
-            <a href="contact.html" class="cta">Kontakte nou</a>
-        </div>
-    </section>
+    <div class="banner">
+        <h1>Byenveni nan DK MULTI SERVICES</h1>
+        <p>Nou ofri pi bon sèvis enprimri a</p>
+        <a href="contact.html" style="background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Kontakte nou</a>
+    </div>
     
     <section class="services">
         <h2>Sèvis nou yo</h2>
-        <div class="service-item">
+        <div class="service">
             <h3>Enprimri</h3>
             <p>Nou ofri tout kalite enprimri pwofesyonèl.</p>
         </div>
-        <div class="service-item">
+        <div class="service">
             <h3>Grafik Design</h3>
             <p>Kreye konsepsyon inik pou biznis ou.</p>
         </div>
-        <div class="service-item">
+        <div class="service">
             <h3>Livrezon</h3>
             <p>Nou delivre pwodwi ou yo rapidman ak an sekirite.</p>
         </div>
     </section>
     
-    <section class="cta">
+    <section class="disciplines">
+        <h2>Disiplinn yo</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tip Enpresyon</th>
+                    <th>Deskripsyon</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="discipline-type">Enpresyon Papye</td>
+                    <td>Imigrasyon, Lèt pèsonèl, Envitasyon, bagay pou biznis, Papye antèt, Enpresyon Koulè, Foto, Dokiman, Afich, Katalòg, Materyèl piblisite</td>
+                </tr>
+                <tr>
+                    <td class="discipline-type">Enpresyon Grand Fòma</td>
+                    <td>Tablo, Materyèl pou evènman grand fòma</td>
+                </tr>
+                <tr>
+                    <td class="discipline-type">Enpresyon Dijital</td>
+                    <td>Kopi dokiman, Eskane dokiman, Miltiplikasyon dokiman, lot sevis</td>
+                </tr>
+                <tr>
+                    <td class="discipline-type">Enpresyon Pèsonalize</td>
+                    <td>Chwa nan papye, Chwa nan fòm, Koulè pèsonalize</td>
+                </tr>
+                <tr>
+                    <td class="discipline-type">Enpresyon plis...</td>
+                    <td>Liv, Magazin, Rapò, Piblikasyon</td>
+                </tr>
+                <tr>
+                    <td class="discipline-type">Konsepsyon Grafik</td>
+                    <td>Kreyasyon grafik pou nenpot tip, Desen orijinal pou tout kalite enprimant</td>
+                </tr>
+                <tr>
+                    <td class="discipline-type">Livrezon ak Distribisyon</td>
+                    <td>Sèvis pou livrezon, Distribisyon nan divès kominote</td>
+                </tr>
+                <tr>
+                    <td class="discipline-type">Sevis Kliyan</td>
+                    <td>Sèvis kliyan ki gen ladan konseye sou desen ak kalite papye</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <section class="gallery">
+        <h2>Galeri</h2>
+        <div class="image-container">
+            <img src="imaj/imaj6.jpg" alt="Image 6">
+            <img src="imaj/imaj2.jpg" alt="Image 2">
+            <img src="imaj/imaj3.jpg" alt="Image 3">
+            <img src="imaj/imaj4.jpg" alt="Image 4">
+            <img src="imaj/imaj5.jpg" alt="Image 5">
+        </div>
+    </section>
+    
+    <section class="contact">
         <h2>Pran kontak ak nou jodi a!</h2>
-        <a href="contact.html" class="cta">Kontakte nou</a>
+        <a href="contact.html" style="background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Kontakte nou</a>
     </section>
     
     <section class="testimonials">
         <h2>Sa kliyan nou yo di</h2>
-        <div class="testimonial-item">
-            <p>"Pi bon sèvis mwen janm resevwa! Mèsi DK MULTI SERVICES!"</p>
-            <span>- Jean Pierre</span>
-        </div>
-        <div class="testimonial-item">
-            <p>"Travay yo se ekstraòdinè. Mwen rekòmande yo ak tout kè mwen."</p>
-            <span>- Marie Louise</span>
-        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Testimonyaj</th>
+                    <th>Kliyan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>"Pi bon sèvis mwen janm resevwa! Mèsi DK MULTI SERVICES!"</td>
+                    <td>Jean Pierre</td>
+                </tr>
+                <tr>
+                    <td>"Travay yo se ekstraòdinè. Mwen rekòmande yo ak tout kè mwen."</td>
+                    <td>Marie Louise</td>
+                </tr>
+                <!-- Ajoutez d'autres témoignages ici si nécessaire -->
+            </tbody>
+        </table>
     </section>
     
-   <footer>
+    <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
                 <h3>DK MULTI SERVICES</h3>
                 <p>Adrès: #20 Bizoton 53, Pòtoprens, Ayiti</p>
-                <p>Telefòn: +509 4850 4571  /  4321 0467</p>
-				<p>Email : saintumacarlos22@gmail.com</p>
+                <p>Telefòn: +509 4850 4571 / 4321 0467</p>
+                <p>Email: saintumacarlos22@gmail.com</p>
                 <p>Email: info@dkmultiservices.ht</p>
             </div>
             <div class="footer-section">
@@ -77,12 +219,14 @@
                 <p><a href="https://www.facebook.com/votrepage" target="_blank">Facebook</a></p>
                 <p><a href="https://www.twitter.com/votrepage" target="_blank">Twitter</a></p>
                 <p><a href="https://www.instagram.com/votrepage" target="_blank">Instagram</a></p>
+                <p><a href="https://wa.me/+50948504571" target="_blank">WhatsApp</a></p>
+                <p><a href="mailto:saintumacarlos22@gmail.com">Kont Gmail</a></p>
             </div>
             <div class="footer-section">
                 <h3>Lyen itil</h3>
-                <p><a href="privacy.html">Politik Konfidansyalite</a></p>
-                <p><a href="terms.html">Tèm ak Kondisyon</a></p>
-                <p><a href="faq.html">FAQ</a></p>
+                <p><a href="privacy.html">Politik Konfidansyalite</a> <button type="button">Wete</button></p>
+                <p><a href="terms.html">Tèm ak Kondisyon</a> <button type="button">Wete</button></p>
+                <p><a href="faq.html">FAQ</a> <button type="button">Wete</button></p>
             </div>
         </div>
     </footer>
