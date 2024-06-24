@@ -3,8 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontak - DK MULTI SERVICES</title>
+    <title>Kontakte nou - DK MULTI SERVICES</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Styles for the page */
+        body {
+            font-family: 'Raleway', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007bff; /* Blue color */
+            color: #fff;
+            padding: 10px 0;
+        }
+        .logo {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .contact-form {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 600px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .contact-form h1, .contact-form h2, .contact-form h3 {
+            color: #333;
+            text-align: center;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+        .contact-form button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+            float: right;
+        }
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px 0;
+            background-color: #007bff; /* Blue color */
+            color: #fff;
+        }
+        .footer-section {
+            flex: 1;
+            margin: 10px;
+        }
+        .footer-section h3 {
+            color: #fff;
+        }
+        .footer-section p, .footer-section a {
+            color: #ccc;
+        }
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,45 +124,44 @@
         </nav>
     </header>
     
-    <section class="contact">
+    <section class="contact-form">
         <h1>Kontakte nou</h1>
-        <form action="submit_form.php" method="post">
-            <div class="form-group">
-                <label for="name">Non:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Mesaj:</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
+        <form action="#" method="post">
+            <label for="name">Non:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mesaj:</label>
+            <textarea id="message" name="message" required></textarea>
+
             <button type="submit">Voye</button>
         </form>
     </section>
-    
-   <footer>
+
+    <footer>
         <div class="footer-content">
             <div class="footer-section">
                 <h3>DK MULTI SERVICES</h3>
                 <p>Adrès: #20 Bizoton 53, Pòtoprens, Ayiti</p>
-                <p>Telefòn: +509 4850 4571  /  4321 0467</p>
-				<p>Email : saintumacarlos22@gmail.com</p>
+                <p>Telefòn: +509 4850 4571 / 4321 0467</p>
+                <p>Email: saintumacarlos22@gmail.com</p>
                 <p>Email: info@dkmultiservices.ht</p>
             </div>
             <div class="footer-section">
                 <h3>Swiv nou</h3>
-                <p><a href="https://www.facebook.com/votrepage" target="_blank">Facebook</a></p>
-                <p><a href="https://www.twitter.com/votrepage" target="_blank">Twitter</a></p>
-                <p><a href="https://www.instagram.com/votrepage" target="_blank">Instagram</a></p>
+                <p><a href="https://www.facebook.com/votrepage" target="_blank" style="color: #ccc;">Facebook</a></p>
+                <p><a href="https://www.twitter.com/votrepage" target="_blank" style="color: #ccc;">Twitter</a></p>
+                <p><a href="https://www.instagram.com/votrepage" target="_blank" style="color: #ccc;">Instagram</a></p>
+                <p><a href="https://wa.me/+50948504571" target="_blank" style="color: #ccc;">WhatsApp</a></p>
+                <p><a href="mailto:saintumacarlos22@gmail.com" style="color: #ccc;">Kont Gmail</a></p>
             </div>
             <div class="footer-section">
                 <h3>Lyen itil</h3>
-                <p><a href="privacy.html">Politik Konfidansyalite</a></p>
-                <p><a href="terms.html">Tèm ak Kondisyon</a></p>
-                <p><a href="faq.html">FAQ</a></p>
+                <p><a href="privacy.html" style="color: #ccc;">Politik Konfidansyalite</a></p>
+                <p><a href="terms.html" style="color: #ccc;">Tèm ak Kondisyon</a></p>
+                <p><a href="faq.html" style="color: #ccc;">FAQ</a></p>
             </div>
         </div>
     </footer>
