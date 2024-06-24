@@ -5,6 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testimonyaj - DK MULTI SERVICES</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Stilizasyon pou testimonyaj */
+        .testimonials {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            text-align: center;
+        }
+        .testimonial {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .testimonial p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: black; /* Couleur du texte en noir */
+        }
+        .testimonial span {
+            display: block;
+            margin-top: 10px;
+            font-style: italic;
+            color: blue; /* Couleur du texte en bleu */
+        }
+
+        /* Stilizasyon pou kliyan */
+        .clients {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            text-align: center;
+        }
+        .client {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .client img {
+            max-width: 150px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -26,36 +71,54 @@
         <h1>Sa kliyan nou yo di</h1>
         <div class="testimonial">
             <p>"Pi bon sèvis mwen janm resevwa! Mèsi DK MULTI SERVICES!"</p>
-            <span>- Jean Pierre</span>
+            <span style="color: blue;">- Jean Pierre</span>
         </div>
         <div class="testimonial">
             <p>"Travay yo se ekstraòdinè. Mwen rekòmande yo ak tout kè mwen."</p>
-            <span>- Marie Louise</span>
+            <span style="color: blue;">- Marie Louise</span>
         </div>
-        <!-- Add more testimonials as needed -->
+        <div class="testimonial">
+            <p>"Sèvis yo tre profesyonèl ak bon pri. Mwen kontan avek rezilta a."</p>
+            <span style="color: blue;">- Paul Dupont</span>
+        </div>
+        <div class="testimonial">
+            <p>"Ekip la tre amikal ak kominike byen avèk kliyan yo. Mwen satisfè a 100%."</p>
+            <span style="color: blue;">- Anne Marie</span>
+        </div>
+        <div class="testimonial">
+            <p>"Yon eksperyans inik. Sèvis kliyan an se pi bon mwen janm wè."</p>
+            <span style="color: blue;">- Pierre Michel</span>
+        </div>
+        <div class="testimonial">
+            <p>"Nou wè sa nou vle wè, epi nou wè sa nou pa t' atann anko. Mwen rekòmande yo san esitasyon!"</p>
+            <span style="color: blue;">- Nathalie Auguste</span>
+        </div>
+        <div class="testimonial">
+            <p>"Yo bay sèvis ki vle di lajan ou bay. Pa gen okenn lòt konpayi ki kapab konpare avek DK MULTI SERVICES!"</p>
+            <span style="color: blue;">- Jacques Lafontant</span>
+        </div>
+        <div class="testimonial">
+            <p>"Nou se yon kliyan fidèl. Nou p'ap janm alò wout la san yo!"</p>
+            <span style="color: blue;">- Nicole Joseph</span>
+        </div>
+        <div class="testimonial">
+            <p>"Sèvis pèfòmans! Menm ak yon peryòd kriz finansye, yo rive jwenn solisyon pou nou!"</p>
+            <span style="color: blue;">- Bernard Guillaume</span>
+        </div>
+        <div class="testimonial">
+            <p>"Mwen santi mwen an sekirite avèk ekip la. Yo bay yon eksperyans kliyan ki make!"</p>
+            <span style="color: blue;">- Martine Pierre-Louis</span>
+        </div>
     </section>
     
-    <section class="clients">
-        <h1>Kliyan nou yo</h1>
-        <div class="client">
-            <img src="client1-logo.png" alt="Logo Kliyan 1">
-        </div>
-        <div class="client">
-            <img src="client2-logo.png" alt="Logo Kliyan 2">
-        </div>
-        <div class="client">
-            <img src="client3-logo.png" alt="Logo Kliyan 3">
-        </div>
-        <!-- Add more clients as needed -->
-    </section>
-    
-   <footer>
+ 
+    <footer>
         <div class="footer-content">
             <div class="footer-section">
                 <h3>DK MULTI SERVICES</h3>
                 <p>Adrès: #20 Bizoton 53, Pòtoprens, Ayiti</p>
-                <p>Telefòn: +509 4850 4571  /  4321 0467</p>
-				<p>Email : saintumacarlos22@gmail.com</p>
+                <p>Telefòn: +509 4850 4571 / 4321 0467</p>
+                <p>Email: saintumacarlos22@gmail.com</p>
                 <p>Email: info@dkmultiservices.ht</p>
             </div>
             <div class="footer-section">
@@ -63,12 +126,14 @@
                 <p><a href="https://www.facebook.com/votrepage" target="_blank">Facebook</a></p>
                 <p><a href="https://www.twitter.com/votrepage" target="_blank">Twitter</a></p>
                 <p><a href="https://www.instagram.com/votrepage" target="_blank">Instagram</a></p>
+                <p><a href="https://wa.me/+50948504571" target="_blank">WhatsApp</a></p>
+                <p><a href="mailto:saintumacarlos22@gmail.com">Kont Gmail</a></p>
             </div>
             <div class="footer-section">
                 <h3>Lyen itil</h3>
-                <p><a href="privacy.html">Politik Konfidansyalite</a></p>
-                <p><a href="terms.html">Tèm ak Kondisyon</a></p>
-                <p><a href="faq.html">FAQ</a></p>
+                <p><a href="privacy.html">Politik Konfidansyalite</a> <button type="button">Wete</button></p>
+                <p><a href="terms.html">Tèm ak Kondisyon</a> <button type="button">Wete</button></p>
+                <p><a href="faq.html">FAQ</a> <button type="button">Wete</button></p>
             </div>
         </div>
     </footer>
